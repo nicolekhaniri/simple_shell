@@ -1,2 +1,2 @@
 # simple_shell
-Simple shell project writen in C for alx 
+Simple shell project written in C for alx 
