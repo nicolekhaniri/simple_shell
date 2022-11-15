@@ -9,7 +9,7 @@ int main(void)
 		printf("\n($) ");
 		scanf("%s", &command);
 		printf("command: %s", &command);
-		//	function to execute ./bin/{command}
+		//	function to execute ./bin/{command} execve
 	}
 	printf("($) ");
 	scanf("%s", &command);
