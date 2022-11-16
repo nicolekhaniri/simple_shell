@@ -13,23 +13,21 @@ int sh_execute(char **args)
 	int (*builtin_func[]) (char **) = {&builtin_cd, &builtin_exit};
 
 	int i;
-	
 
 	if (args[0] == NULL)
 	{
 		return (1);
 	}
 
-	for (i=0; i < num_builtins(); i++)
-	
+	for (i = 0; i < num_builtins(); i++)
+
 	{
 		if (strcmp(args[0], builtin_str[i]) == 0)
 		{
-			return(//something//);
+			return ("this");
 		}
 	}
 	return (sh_launch(args));
-	
 }
 
 /**
@@ -40,20 +38,21 @@ int sh_execute(char **args)
 
 void sh_shell(void)
 {
-	char *command;	
+	char *command;
+
 	printf("\nShell");
 
-	while(true)
+
+	while (true)
 	{
 		printf("\n($) ");
 		scanf("%s", &command);
 		printf("command: %s", &command);
-		//	function to execute ./bin/{command}
 	}
 	printf("($) ");
 	scanf("%s", &command);
 	printf("command: %s", &command);
-	return 0;
+	return (0);
 }
 
 /**
@@ -66,5 +65,5 @@ int main(void)
 {
 	sh_shell();
 
-	return (EXIT_SUCCESS)
+	return (EXIT_SUCCESS);
 }
